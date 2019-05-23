@@ -39,5 +39,17 @@ class ViewController: NSViewController {
     @IBAction func resetButtonClicked(_ sender: Any) {
     }
     
+    @IBAction func startTimerMenuItemSelected(_ sender: Any) {
+        startButtonClicked(sender)
+    }
+    
+    @IBAction func stopTimerMenuItemSelected(_ sender: Any) {
+        stopButtonClicked(sender)
+    }
+    
+    @IBAction func resetTimerMenuItemSelected(_ sender: Any) {
+        resetButtonClicked(sender)
+    }
+    
 }
 
