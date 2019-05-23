@@ -707,28 +707,28 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="471"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvu-JN-tlN">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="60"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="see-br-o45">
-                                        <rect key="frame" x="0.0" y="-1" width="160" height="62"/>
+                                        <rect key="frame" x="0.0" y="-1" width="115" height="62"/>
                                         <buttonCell key="cell" type="smallSquare" title="Start" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ftK-rZ-7Ir">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UgW-Gp-7mL">
-                                        <rect key="frame" x="160" y="-1" width="160" height="62"/>
+                                        <rect key="frame" x="115" y="-1" width="116" height="62"/>
                                         <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2Lr-Ns-0SA">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Z1-d7-gwx">
-                                        <rect key="frame" x="320" y="-1" width="160" height="62"/>
+                                        <rect key="frame" x="231" y="-1" width="115" height="62"/>
                                         <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zL7-ts-MnC">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
@@ -752,20 +752,56 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="83" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dN3-gB-5JL">
+                                <rect key="frame" x="20" y="68" width="306" height="383"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fVb-Ox-bWE">
+                                        <rect key="frame" x="50" y="262" width="207" height="121"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="border" alignment="center" title="6:00" id="2i8-wE-Nf8">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wL9-bi-FLl">
+                                        <rect key="frame" x="20" y="0.0" width="266" height="179"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="Bsd-k3-lf5"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wL9-bi-FLl" firstAttribute="leading" secondItem="dN3-gB-5JL" secondAttribute="leading" constant="20" symbolic="YES" id="6D3-sf-n7d"/>
+                                    <constraint firstAttribute="trailing" secondItem="wL9-bi-FLl" secondAttribute="trailing" constant="20" symbolic="YES" id="cXO-Fz-aXB"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="dN3-gB-5JL" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="1F5-aS-DOW"/>
                             <constraint firstItem="Vvu-JN-tlN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Khd-6x-WT6"/>
                             <constraint firstItem="Vvu-JN-tlN" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="O3Z-HS-zSH"/>
+                            <constraint firstAttribute="trailing" secondItem="dN3-gB-5JL" secondAttribute="trailing" constant="20" symbolic="YES" id="V7W-8d-twC"/>
                             <constraint firstAttribute="trailing" secondItem="Vvu-JN-tlN" secondAttribute="trailing" id="XAp-VT-sh7"/>
                             <constraint firstAttribute="bottom" secondItem="Vvu-JN-tlN" secondAttribute="bottom" id="XYc-dW-QSP"/>
                             <constraint firstAttribute="trailing" secondItem="Vvu-JN-tlN" secondAttribute="trailing" id="Zb1-8x-AS0"/>
+                            <constraint firstItem="dN3-gB-5JL" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="jRr-5M-lYJ"/>
+                            <constraint firstItem="Vvu-JN-tlN" firstAttribute="top" secondItem="dN3-gB-5JL" secondAttribute="bottom" constant="8" symbolic="YES" id="qLl-JT-KO9"/>
                             <constraint firstAttribute="bottom" secondItem="Vvu-JN-tlN" secondAttribute="bottom" id="yLJ-f9-Ids"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="788"/>
+            <point key="canvasLocation" x="74" y="905"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>
