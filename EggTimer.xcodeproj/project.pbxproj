@@ -13,6 +13,7 @@
 		214506432295D241006C41EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214506412295D241006C41EB /* Main.storyboard */; };
 		2145064F2295D241006C41EB /* EggTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145064E2295D241006C41EB /* EggTimerTests.swift */; };
 		2145065A2295D242006C41EB /* EggTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214506592295D242006C41EB /* EggTimerUITests.swift */; };
+		21AC3CEE2297124900B04A5A /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC3CED2297124900B04A5A /* PrefsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		214506552295D242006C41EB /* EggTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		214506592295D242006C41EB /* EggTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerUITests.swift; sourceTree = "<group>"; };
 		2145065B2295D242006C41EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AC3CED2297124900B04A5A /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				2145063B2295D240006C41EB /* AppDelegate.swift */,
 				2145063D2295D240006C41EB /* ViewController.swift */,
+				21AC3CED2297124900B04A5A /* PrefsViewController.swift */,
 				2145063F2295D241006C41EB /* Assets.xcassets */,
 				214506412295D241006C41EB /* Main.storyboard */,
 				214506442295D241006C41EB /* Info.plist */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2145063E2295D240006C41EB /* ViewController.swift in Sources */,
+				21AC3CEE2297124900B04A5A /* PrefsViewController.swift in Sources */,
 				2145063C2295D240006C41EB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
